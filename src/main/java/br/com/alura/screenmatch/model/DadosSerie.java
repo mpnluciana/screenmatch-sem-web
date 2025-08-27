@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonAlias;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public record DadosSerie(@JsonAlias ("Title") String titulo,  //o @JsonAlias serve como apelido. Puxa o nome que está sendo usado na API
+public record DadosSerie(@JsonAlias("Title") String titulo, //o @JsonAlias serve como apelido. Puxa o nome que está sendo usado na API
                          @JsonAlias("totalSeasons") Integer totalTemporadas,
-                         @JsonAlias ("imdbRating") String avaliacao) {
+                         @JsonAlias("imdbRating") String avaliacao) {
 }
